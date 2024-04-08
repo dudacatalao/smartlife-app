@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 2000px;
+}
+
+:root {
+  --background: #2C2C2C; 
+  --secondary-color: #87a878; 
+  --font-family: Arial, sans-serif; 
+}
+
+body{
+  background-color: var(--background);
+}
+
+.talala{
+  background-color:var(--secondary-color);
+}
