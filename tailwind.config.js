@@ -13,7 +13,7 @@ export default {
         emerald: colors.emerald,
         green1: '#87a878',
         green2: '#b0bc98',
-        background:'#2C2C2C'
+        background:'#f5ebe0'
       }
     },
   },
