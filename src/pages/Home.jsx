@@ -2,6 +2,13 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import Navbar from '../components/Navbar'
+import Card from '../components/Card'
+import Card1 from '../images/1.jpg'
+import Card2 from '../images/2.jpg'
+import Card3 from '../images/3.webp'
+import Card4 from '../images/4.webp'
+import Logo from '../images/logo.png'
+import ContainerBemEstar from '../components/ContainerBemEstar'
 
 const navigation = [
   { name: 'Página Inicial', href: '#' },
@@ -9,7 +16,7 @@ const navigation = [
   { name: 'Qualidade de Vida', href: '#' },
 ]
 
-export default function Navbar2() {
+export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -18,13 +25,12 @@ export default function Navbar2() {
         <Navbar/>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src={Logo}
                   alt=""
                 />
               </a>
@@ -116,6 +122,15 @@ export default function Navbar2() {
         <h1 className='text-3xl tracking-tight text-center'>
           ULTÍMOS POSTS
         </h1>
+        <div className='flex items-center justify-around py-20'>
+          <Card titulo={"As relações entre meio ambiente e cidades inteligentes"} descricao={"Aplicação da tecnologia pura e simples em um espaço urbano, o aproveitamento eficiente de recursos naturais é o que ajuda a transformar uma cidade em uma smart city."} 
+          image={Card1}/>
+          <Card titulo={"Tecnologia melhorando a qualidade de vida de todos"} descricao={"A tecnologia tem desempenhado um papel cada vez mais crucial na vida dos idosos, oferecendo uma ampla gama de benefícios que melhoram sua qualidade de vida, saúde e bem-estar."} image={Card2}/>
+          <Card titulo={"Saúde conectada"} descricao={"Como a tecnologia impacta a qualidade de vida dos curitibanos. Com a aplicação da tecnologia à saúde, instituições curitibanas salvam vidas e promovem bem-estar."} image={Card3}/>
+          <Card titulo={"Dia do Bem-Estar Digital: veja como melhorar sua relação com a tecnologia"} descricao={"O Dia do Bem-Estar Digital é celebrado nesta sexta-feira (5) como um movimento global que dissemina boas práticas para uma relação saudável com a tecnologia."} image={Card4}/>
+        </div>
+        <ContainerBemEstar/>
+        
       </main>
     </div>
   )
