@@ -9,6 +9,7 @@ import Card3 from '../images/3.webp'
 import Card4 from '../images/4.webp'
 import Logo from '../images/logo.png'
 import ContainerBemEstar from '../components/ContainerBemEstar'
+import ScrollReveal from 'scrollreveal';
 
 const navigation = [
   { name: 'Página Inicial', href: '#' },
@@ -17,6 +18,7 @@ const navigation = [
 ]
 
 export default function Home() {
+  
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -125,9 +127,9 @@ export default function Home() {
         <div className='flex items-center justify-around py-20'>
           <Card titulo={"As relações entre meio ambiente e cidades inteligentes"} descricao={"Aplicação da tecnologia pura e simples em um espaço urbano, o aproveitamento eficiente de recursos naturais é o que ajuda a transformar uma cidade em uma smart city."} 
           image={Card1}/>
-          <Card titulo={"Tecnologia melhorando a qualidade de vida de todos"} descricao={"A tecnologia tem desempenhado um papel cada vez mais crucial na vida dos idosos, oferecendo uma ampla gama de benefícios que melhoram sua qualidade de vida, saúde e bem-estar."} image={Card2}/>
-          <Card titulo={"Saúde conectada"} descricao={"Como a tecnologia impacta a qualidade de vida dos curitibanos. Com a aplicação da tecnologia à saúde, instituições curitibanas salvam vidas e promovem bem-estar."} image={Card3}/>
-          <Card titulo={"Dia do Bem-Estar Digital: veja como melhorar sua relação com a tecnologia"} descricao={"O Dia do Bem-Estar Digital é celebrado nesta sexta-feira (5) como um movimento global que dissemina boas práticas para uma relação saudável com a tecnologia."} image={Card4}/>
+          <Card titulo={"Tecnologia melhorando a qualidade de vida de todos"} descricao={"A modernização urbana por meio da tecnologia contribui para elevar o bem-estar coletivo. Ao otimizar o uso de recursos naturais e implementar soluções inovadoras."} image={Card2}/>
+          <Card titulo={"Saúde conectada"} descricao={"Como a tecnologia impacta a qualidade de vida dos curitibanos. Com a aplicação da tecnologia à saúde, instituições curitibanas salvam vidas, promovem bem-estar e fortalecem os laços comunitários."} image={Card3}/>
+          <Card titulo={"Veja como melhorar sua relação com a tecnologia"} descricao={"O Dia do Bem-Estar Digital é celebrado nesta sexta-feira (5) como um movimento global que dissemina boas práticas para uma relação saudável com a tecnologia, incentivando o equilíbrio da tecnologia."} image={Card4}/>
         </div>
         <ContainerBemEstar/>
         
