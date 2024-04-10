@@ -15,8 +15,7 @@ export default {
         green2: '#b0bc98',
         background:'#f5ebe0',
         mostarda: '#b99b69'
-      }
-      
+      }  
     },
   },
   plugins: [],

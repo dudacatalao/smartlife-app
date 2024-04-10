@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,4 +29,8 @@ body{
   font-family: "Amatic SC", sans-serif;
   font-size: 60px;
   color: white;
+}
+
+.mainfont{
+  font-family: "Work Sans", sans-serif;
 }

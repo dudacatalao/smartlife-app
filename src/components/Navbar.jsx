@@ -3,7 +3,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Página Inicial', href: '#' },
-  { name: 'Bem Estar', href: '#' },
+  { name: 'Bem Estar', href: {} },
   { name: 'Qualidade de Vida', href: '#' },
 ]
 
