@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/outline'
-import BemEstar from '../pages/BemEstar'
+import { NavLink } from 'react-router-dom'
 
 const navigation = [
-  { name: 'Página Inicial', href: '#' },
-  { name: 'Bem Estar', href: {BemEstar} },
-  { name: 'Qualidade de Vida', href: '#' },
+  { name: 'Página Inicial', href: '/' },
+  { name: 'Bem Estar', href: '/bemestar' },
+  { name: 'Qualidade de Vida', href: '/qualidadedevida' },
 ]
 
 export default function Navbar() {
@@ -36,11 +36,9 @@ export default function Navbar() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12 ">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900 hover:text-green1">
-                {item.name}
-              </a>
-            ))}
+            {navigation.map((item => (
+              <NavLink key={item.nome} to={item.href} className="text-sm font-semibold leading-6 text-gray-900 hover:text-green1">{item.name}</NavLink>
+            )))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
