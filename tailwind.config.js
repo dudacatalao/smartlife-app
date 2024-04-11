@@ -14,7 +14,8 @@ export default {
         green1: '#87a878',
         green2: '#b0bc98',
         background:'#f5ebe0',
-        mostarda: '#b99b69'
+        mostarda: '#b99b69',
+        green3: '#aebd93'
       }  
     },
   },

@@ -10,7 +10,7 @@ import Card4 from '../images/4.webp'
 import Logo from '../images/logo.png'
 import ContainerBemEstar from '../components/ContainerBemEstar'
 import ContainerSquares from '../components/ContainerSquares'
-
+import Footer from '../components/Footer'
 
 const navigation = [
   { name: 'Página Inicial', href: '#' },
@@ -132,10 +132,9 @@ export default function Home() {
           <Card titulo={"Saúde conectada"} descricao={"Como a tecnologia impacta a qualidade de vida dos curitibanos. Com a aplicação da tecnologia à saúde, instituições curitibanas salvam vidas, promovem bem-estar e fortalecem os laços comunitários."} image={Card3}/>
           <Card titulo={"Veja como melhorar sua relação com a tecnologia"} descricao={"O Dia do Bem-Estar Digital é celebrado nesta sexta-feira (5) como um movimento global que dissemina boas práticas para uma relação saudável com a tecnologia, incentivando o equilíbrio da tecnologia."} image={Card4}/>
         </div>
-
         <ContainerBemEstar/>
         <ContainerSquares/>
-        
+        <Footer/>
       </main>
     </div>
   )
