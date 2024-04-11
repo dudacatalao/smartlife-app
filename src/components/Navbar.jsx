@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/outline'
+import BemEstar from '../pages/BemEstar'
 
 const navigation = [
   { name: 'Página Inicial', href: '#' },
-  { name: 'Bem Estar', href: {} },
+  { name: 'Bem Estar', href: {BemEstar} },
   { name: 'Qualidade de Vida', href: '#' },
 ]
 

@@ -31,6 +31,12 @@ body{
   color: white;
 }
 
+.title2{
+  font-family: "Amatic SC", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
 .mainfont{
   font-family: "Work Sans", sans-serif;
 }
