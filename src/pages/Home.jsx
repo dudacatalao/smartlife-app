@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
-import Navbar from '../components/Navbar'
+import NavbarHome from '../components/NavbarHome'
 import Card from '../components/Card'
 import Card1 from '../images/1.jpg'
 import Card2 from '../images/2.jpg'
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="bg-background">
       <header className="absolute inset-x-0 top-0 z-50">
-        <Navbar/>
+        <NavbarHome/>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
