@@ -1,41 +1,35 @@
-import { Carousel } from "@material-tailwind/react";
-import Banner1 from '../images/banners/Banner1.png'
-import Banner2 from '../images/banners/Banner2.png'
-import Banner3 from '../images/banners/Banner3.png'
- 
+import Banner1 from "../images/banner1.png";
+import Banner2 from "../images/banner2.png";
+import Banner3 from "../images/banner3.png";
+import "../styles/index.css";
+import { register } from "swiper/element/bundle";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+register();
+import "swiper/css";
+
 export default function Slider() {
-  return (
-    <Carousel
-      className="rounded-xl py-2"
-      navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-          {new Array(length).fill("").map((_, i) => (
-            <span
-              key={i}
-              className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-              }`}
-              onClick={() => setActiveIndex(i)}
-            />
-          ))}
-        </div>
-      )}
-    >
-      <img
-        src={Banner1}
-        alt="image 1"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src={Banner2}
-        alt="image 2"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src={Banner3}
-        alt="image 3"
-        className="h-full w-full object-cover"
-      />
-    </Carousel>
-  );
+	const data = [
+		{ id: "1", image: { Banner1 } },
+		{ id: "2", image: { Banner2 } },
+		{ id: "3", image: { Banner3 } },
+	];
+
+	return (
+		<>
+			<Swiper slidesPerView={1} 
+      pagination={{clickable: true}}
+      navigation
+      >
+				{data.map((item) => (
+					<SwiperSlide key={item.id}>
+						<img src={item.image} alt="slider" className="slide-item" />
+					</SwiperSlide>
+				))}
+			</Swiper>
+		</>
+	);
 }
