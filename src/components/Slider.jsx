@@ -1,7 +1,7 @@
 import { Carousel } from "@material-tailwind/react";
-import Banner1 from '../images/banners/Banner1.png'
-import Banner2 from '../images/banners/Banner2.png'
-import Banner3 from '../images/banners/Banner3.png'
+import Banner1 from '../images/banners/banner1.png'
+import Banner2 from '../images/banners/banner2.png'
+import Banner3 from '../images/banners/banner3.png'
  
 export default function Slider() {
   return (
