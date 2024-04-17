@@ -5,7 +5,7 @@ export default function Footer(){
                 <nav className="flex flex-wrap justify-center -mx-5 -my-2">
                     <div className="px-5 py-2">
                         <a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                            About
+                            Sobre
                         </a>
                     </div>
                     <div className="px-5 py-2">
@@ -14,7 +14,7 @@ export default function Footer(){
                         </a>
                     </div>
                     <div className="px-5 py-2">
-                        <a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        <a href="/team" className="text-base leading-6 text-gray-500 hover:text-gray-900">
                             Team
                         </a>
                     </div>

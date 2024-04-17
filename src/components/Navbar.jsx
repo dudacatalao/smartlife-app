@@ -8,7 +8,7 @@ const navigation = [
   { name: 'Qualidade de Vida', href: '/qualidadedevida' },
 ]
 
-export default function NavbarHome() {
+export default function Navbar() {
   const [ setMobileMenuOpen] = useState(false)
 
   return (
