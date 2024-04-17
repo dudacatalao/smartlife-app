@@ -1,5 +1,4 @@
 // import Footer from "../components/Footer"
-import BlogSection from "../components/BlogSection"
 import Footer from "../components/Footer"
 import FourthBlogSection from "../components/FourthBlogSection"
 import Navbar from "../components/Navbar"
