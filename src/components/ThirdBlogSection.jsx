@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ci from '../images/cidadeinteligente.png'
 
 export default function ThirdBlogSection() {
@@ -14,37 +14,22 @@ export default function ThirdBlogSection() {
                 </div>
                 <div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 divide-gray-700">
                     <div className="pt-6 pb-4 space-y-2">
-                        <span>12 June</span>
-                        <h1 className="text-3xl font-bold">Lorem ipsum dolor sit.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                        <a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm text-green4">
-                            <span>Read more</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                            </svg>
-                        </a>
+                        <span>17 Abril</span>
+                        <h1 className="text-3xl font-bold">Sistemas De Segurança Inteligentes</h1>
+                        <p className='pb-6'>Empregam tecnologias avançadas, como câmeras de vigilância com análise de vídeo</p>
+                        
                     </div>
                     <div className="pt-6 pb-4 space-y-2">
-                        <span>12 June</span>
-                        <h1 className="text-3xl font-bold">Lorem ipsum dolor sit.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                        <a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm text-green4">
-                            <span>Read more</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                            </svg>
-                        </a>
+                        <span>20 Abril</span>
+                        <h1 className="text-3xl font-bold">Promoção Da Inovação</h1>
+                        <p className='pb-6'>Uma cidade inteligente busca inovação, criando um ambiente propício para o desenvolvimento de soluções tecnológicas</p>
+                        
                     </div>
                     <div className="pt-6 pb-4 space-y-2">
-                        <span>12 June</span>
-                        <h1 className="text-3xl font-bold">Lorem ipsum dolor sit.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                        <a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm text-green4">
-                            <span>Read more</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                            </svg>
-                        </a>
+                        <span>27 Março</span>
+                        <h1 className="text-3xl font-bold">Desenvolvimento De Áreas Verdes</h1>
+                        <p>É uma das estratégias para criar ambientes urbanos mais agradáveis, saudáveis e sustentáveis</p>
+                        
                     </div>
                 </div>
             </div>
