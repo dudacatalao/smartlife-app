@@ -1,32 +1,31 @@
-import { useState } from 'react';
-import { Bars3Icon } from '@heroicons/react/24/outline';
-import { NavLink } from 'react-router-dom';
-import SideBar from '../components/SideBar';
+import { useState } from "react";
+import { Bars3Icon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
+import SideBar from "../components/SideBar";
 
 const navigation = [
-  { name: 'Página Inicial', href: '/' },
-  { name: 'Bem Estar', href: '/bemestar' },
-  { name: 'Qualidade de Vida', href: '/qualidadedevida' },
+	{ name: "Página Inicial", href: "/" },
+	{ name: "Bem Estar", href: "/bemestar" },
+	{ name: "Qualidade de Vida", href: "/qualidadedevida" },
 ];
 
-export default function NavbarHome() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isCloseIconShown, setIsCloseIconShown] = useState(false);
+export default function Navbar() {
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+	const [isCloseIconShown, setIsCloseIconShown] = useState(false);
 
-  const handleMobileMenuToggle = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-    setIsCloseIconShown(!isCloseIconShown);
-  };
+	const handleMobileMenuToggle = () => {
+		setIsMobileMenuOpen(!isMobileMenuOpen);
+		setIsCloseIconShown(!isCloseIconShown);
+	};
 
-  return (
-    <div className="bg-background">
-      <header className=" inset-x-0 top-0 z-50 bg-white shadow-md">
-        <nav 
-          className="flex items-center justify-between p-6 lg:px-8" 
-          aria-label="Global"
-        >
-         
-         <div className="flex lg:flex-1">
+	return (
+		<div className="bg-background">
+			<header className="inset-x-0 top-0 inset-x-0 top-0  bg-white shadow-md absolute">
+				<nav
+					className="flex items-center justify-between p-6 lg:px-8 z-50"
+					aria-label="Global"
+				>
+					<div className="flex lg:flex-1">
 						<div className="lg:hidden">
 							{!isCloseIconShown ? (
 								<button
@@ -58,18 +57,22 @@ export default function NavbarHome() {
 							)}
 						</div>
 					</div>
-          
-          <div className="hidden lg:flex lg:gap-x-12 ">
-            {navigation.map((item) => (
-              <NavLink key={item.name} to={item.href} className="text-sm font-semibold leading-6 text-gray-900 hover:text-green1">{item.name}</NavLink>
-            ))}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            
-          </div>
-        </nav>
-      </header>
-      {isMobileMenuOpen && <SideBar />}
-    </div>
-  );
+
+					<div className="hidden lg:flex lg:gap-x-12 ">
+						{navigation.map((item) => (
+							<NavLink
+								key={item.name}
+								to={item.href}
+								className="text-sm font-semibold leading-6 text-gray-900 hover:text-green1"
+							>
+								{item.name}
+							</NavLink>
+						))}
+					</div>
+					<div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
+				</nav>
+			</header>
+			{isMobileMenuOpen && <SideBar />}
+		</div>
+	);
 }

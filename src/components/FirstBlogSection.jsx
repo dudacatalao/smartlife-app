@@ -6,7 +6,7 @@ import imagem2 from '../images/qualidade2.png';
 export default function FirstBlogSection() {
   return (
     <section className="bg-background">
-      <div className="container max-w-xl p-6 py-24 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+      <div className="container max-w-xl p-6 py-32 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900">Qualidade de Vida e a Smart Life</h2>
           <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-600">Melhorando Sua Qualidade de Vida com Tecnologia Inteligente</p>

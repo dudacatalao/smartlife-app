@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function SideBar(){
   return (
     
-      <div className="fixed flex flex-col top-0 left-0 w-64 bg-white h-full border-r justify-end duration-75 z-10">
+      <div className="fixed flex flex-col top-0 left-0 w-64 bg-white h-full border-r justify-end duration-75 z-50">
         <div className="flex items-center justify-center h-14 border-b">
           <div>Smart Life</div>
         </div>
