@@ -21,7 +21,9 @@ export default function ContainerBemEstar() {
         </p>
 
         <button className="bg-green1 hover:bg-green2 text-white font-bold py-2 px-4 rounded-full my-3 lg:ml-16 lg:mr-16">
-          Acesse aqui
+          <a href="https://zenklub.com.br/blog/autoconhecimento/bem-estar-era-digital/">
+            Acesse aqui
+          </a>
         </button>
       </div>
       <div className="flex justify-center items-center">

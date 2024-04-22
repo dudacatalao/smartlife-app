@@ -96,7 +96,7 @@ export default function Home() {
               O nosso blog para cuidar de você, e te mostrar como a tecnologia favorece a Qualidade de Vida!
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              {/* <a
                 href="/artigo"
                 className="rounded-md bg-green1 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
@@ -104,7 +104,7 @@ export default function Home() {
               </a>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

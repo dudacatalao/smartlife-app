@@ -66,7 +66,7 @@ export default function TeamComponent() {
               </div>
               <div className="flex flex-col sm:text-center">
                 <p className="text-lg font-bold">Kamila Carvalho</p>
-                <p className="mb-5 text-xs text-gray-800">Product Manager</p>
+                <p className="mb-5 text-xs text-gray-800">Developer</p>
                 <div className="flex items-center space-x-3 sm:justify-center">
                   <a
                     href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADcbzOQBNCcclhs2mTz2Bn-5U32kIIEzUc0&keywords=kamila%20ingrid%20de%20carvalho&origin=RICH_QUERY_SUGGESTION&position=0&searchId=1a4df4a2-200b-4108-8464-074eb463301f&sid=o9g&spellCorrectionEnabled=false"
@@ -91,7 +91,7 @@ export default function TeamComponent() {
               </div>
               <div className="flex flex-col sm:text-center">
                 <p className="text-lg font-bold">Betman Octavio</p>
-                <p className="mb-5 text-xs text-gray-800">Product Manager</p>
+                <p className="mb-5 text-xs text-gray-800">Developer</p>
                 <div className="flex items-center space-x-3 sm:justify-center">
                   <a
                     href="https://www.linkedin.com/in/betman-saldana-367705304/"
@@ -116,7 +116,7 @@ export default function TeamComponent() {
               </div>
               <div className="flex flex-col sm:text-center">
                 <p className="text-lg font-bold">Manuelly Carvalho</p>
-                <p className="mb-5 text-xs text-gray-800">Product Manager</p>
+                <p className="mb-5 text-xs text-gray-800">Developer</p>
                 <div className="flex items-center space-x-3 sm:justify-center ">
                   <a
                     href="https://www.linkedin.com/in/manuelly-carvalho-a3b804272/"
