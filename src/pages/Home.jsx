@@ -135,7 +135,7 @@ export default function Home() {
           <Cards/>
         </div>
         <ContainerBemEstar/>
-        <ContainerSquares/>
+        {/* <ContainerSquares/> */}
         <Footer/>
       </main>
     </div>
